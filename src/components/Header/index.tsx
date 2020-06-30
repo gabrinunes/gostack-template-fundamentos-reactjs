@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 import { Link } from 'react-router-dom';
@@ -15,9 +16,10 @@ const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => (
     <header>
       <img src={Logo} alt="GoFinances" />
       <nav>
-        {
-          // Todo
-        }
+        <a>Listar</a>
+        <Link to="/import">
+          <a href="true">Importar</a>
+        </Link>
       </nav>
     </header>
   </Container>
